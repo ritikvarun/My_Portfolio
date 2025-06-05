@@ -7,7 +7,7 @@ import Experience from "./components/Experience.jsx";
 import Works from "./components/Works.jsx";
 import Feedbacks from "./components/Feedbacks.jsx";
 import Footer from "./components/Footer.jsx";
-// import Card from "./components/Card.jsx"
+import Card from "./components/Card.jsx";
 import { BrowserRouter } from "react-router-dom";
 
 const App = () => {
@@ -18,9 +18,9 @@ const App = () => {
           <Navbar />
           <Hero />
         </div>
-        {/* <Card/> */}
+        <Card />
         <About />
-        <Experience />
+        {/* <Experience /> */}
         <Works />
         {/* <Feedbacks /> */}
         <Footer />

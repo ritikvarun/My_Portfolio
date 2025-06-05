@@ -6,6 +6,7 @@ import { styles } from "../styles";
 import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
+// import { live_link } from "../constants/index.js";
 
 const ProjectCard = ({
   index,
@@ -14,6 +15,7 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  live_link,
 }) => {
   return (
     <motion.div
@@ -34,7 +36,16 @@ const ProjectCard = ({
             alt={name}
             className="w-full h-full object-cover rounded-2xl"
           />
-          <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
+          <div className="absolute inset-0 flex justify-end m-3 card-img_hover gap-1">
+            <div>
+              <div
+                onClick={() => window.open(live_link, "_blank")}
+                className="cursor-pointer black-gradient w-10 h-10 rounded-full justify-center items-center flex"
+                title="View Live Demo"
+              >
+                <span className="text-white font-bold text-lg">🔗</span>
+              </div>
+            </div>
             <div
               onClick={() => window.open(source_code_link, "_blank")}
               className="cursor-pointer black-gradient w-10 h-10 rounded-full justify-center items-center flex"

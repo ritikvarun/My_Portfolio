@@ -23,6 +23,7 @@ import {
   jobit,
   tripguide,
   threejs,
+  github,
 } from "../assets";
 
 export const navLinks = [
@@ -72,18 +73,18 @@ const technologies = [
     name: "JavaScript",
     icon: javascript,
   },
-  {
-    name: "TypeScript",
-    icon: typescript,
-  },
+  // {
+  //   name: "TypeScript",
+  //   icon: typescript,
+  // },
   {
     name: "React JS",
     icon: reactjs,
   },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
+  // {
+  //   name: "Redux Toolkit",
+  //   icon: redux,
+  // },
   {
     name: "Tailwind CSS",
     icon: tailwind,
@@ -96,21 +97,21 @@ const technologies = [
     name: "MongoDB",
     icon: mongodb,
   },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
+  // {
+  //   name: "Three JS",
+  //   icon: threejs,
+  // },
   {
     name: "git",
     icon: git,
   },
   {
-    name: "figma",
-    icon: figma,
+    name: "GitHub",
+    icon: github,
   },
   {
-    name: "docker",
-    icon: docker,
+    name: "figma",
+    icon: figma,
   },
 ];
 
@@ -217,6 +218,7 @@ const projects = [
     ],
     image: carrent,
     source_code_link: "https://github.com/",
+    live_link: "https://imdb-tau-gray.vercel.app/",
   },
   {
     name: "Job IT",
